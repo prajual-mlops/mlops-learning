@@ -1,0 +1,6 @@
+INFO Application Started
+INFO Model Loaded
+ERROR Database Connection Failed
+INFO Retry Successful
+ERROR Redis Timeout
+WARNING Disk Space Low
