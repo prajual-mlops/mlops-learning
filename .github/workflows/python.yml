@@ -1,0 +1,31 @@
+name: Python CI
+
+
+on:
+  push:
+    branches:
+      - main
+
+
+jobs:
+  test-python:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+        -name: Checkout Repository
+         uses: actions/checkout@v4
+
+        -name: Setup Python
+         uses: actions/setup-python@v5
+         with:
+          python-version: "3.12"
+
+        -name: Verify Python
+         run: python --version
+
+        -name: Run Hello Script
+         run: python hello.py
+
+

@@ -1,0 +1,5 @@
+{
+    "model_name": "customer_churn_model",
+    "version": "1.0",
+    "accuracy": 0.91
+}

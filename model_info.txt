@@ -1,0 +1,4 @@
+Model Name : customer_churn_model
+Version : 1.0
+Accuracy : 0.91
+Status : Production
