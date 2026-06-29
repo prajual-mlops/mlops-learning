@@ -14,18 +14,18 @@ jobs:
 
     steps:
 
-        -name: Checkout Repository
-         uses: actions/checkout@v4
+        - name: Checkout Repository
+          uses: actions/checkout@v4
 
-        -name: Setup Python
-         uses: actions/setup-python@v5
-         with:
-          python-version: "3.12"
+        - name: Setup Python
+          uses: actions/setup-python@v5
+          with:
+           python-version: "3.12"
 
-        -name: Verify Python
-         run: python --version
+        - name: Verify Python
+          run: python --version
 
-        -name: Run Hello Script
-         run: python hello.py
+        - name: Run Hello Script
+          run: python hello.py
 
 
