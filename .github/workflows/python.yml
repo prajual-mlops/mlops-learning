@@ -22,8 +22,23 @@ jobs:
           with:
            python-version: "3.12"
 
-        - name: Verify Python
-          run: python --version
+        - name: Upgrade pip
+          run: python -m pip install --upgrade pip
+
+        - name: Install Dependencies
+          run: pip install -r requirements.txt
+
+        - name: Verify FastAPI Installation
+          run: python -c "import fastapi"
+
+        - name: Verify MLflow Installation
+          run: python -c "import mlflow"
+
+        - name: Verify Scikit-Learn Installation
+          run: python -c "import sklearn"
+
+        - name: Verify Application Imports
+          run: python -c "import app"
 
         - name: Run Hello Script
           run: python hello.py
